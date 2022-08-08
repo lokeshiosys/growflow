@@ -1,0 +1,146 @@
+/* HERO_BANNER STARTS */
+.hero-banner
+{
+    background-color: var(--ghostwhite) ;
+    padding: 66px 0px 120px;
+}
+.hero
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-cont
+{
+    flex-basis: 57.3%;
+}
+.hero-cont-card
+{
+    max-width: 536px;
+    padding: 10px 0px 20px;
+}
+.hero-contxt p
+{
+    margin-bottom: 2.8%;
+    color: var(--midnightblue);
+}
+.hero-cont .hero-heading
+{
+    margin-bottom: 2.373%
+}
+.hero-heading h1
+{
+    color: var(--midnightblue);
+}
+.hero-image
+{
+    flex-basis: 40.17%;
+    margin-left: 2.47%;
+    padding: 76px 0;
+}
+.hero-button a.hero-button-child
+{
+    font-size: 13px;
+    line-height: 17px;
+    padding: 16px 32px;
+    color: var(--midnightblue);
+    font-weight: 700;
+    border: 2px solid var(--midnightblue);
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+    background: transparent;
+    outline: 0;
+}
+span.hero-button-txt
+{
+    display: block;
+    position: relative;
+    transform: translate(10px, -10px);
+    transition: -webkit-transform 150ms ease-out;
+    transition: transform 150ms ease-out;
+    transition: transform 150ms ease-out,-webkit-transform 150ms ease-out;
+}
+span.button-hover
+{
+    position: absolute;
+    display: block;
+    border: 2px solid var(--midnightblue);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transform: translate(5px, -10px);
+    background-color: var(--sunglow);
+    box-shadow: 0 0 0 1px var(--sunglow);
+    z-index: -1;
+    transition: transform 150ms ease-out;
+    margin-left: 4px;
+}
+a.hero-button-child:hover {
+    background-color: var(--sunglow);
+    transition: .3s all ease-in-out;
+}
+a.hero-button-child:hover span.hero-button-txt
+{
+    transform: translate(0px,-4px);
+} 
+a.hero-button-child:hover span.button-hover
+{
+    transform: translate(-2px,-4px);
+    transition: transform 150ms ease-out;
+}
+.pop-up-img
+{
+    background-image: url(./growflowimg/handwave.jpg);
+    min-height: 233.13px;
+}
+.hero-link
+{
+    position: relative;
+    z-index: 1;
+}
+.pop-up-icon 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background-color: var(--midnightblue);
+    width: 100%;
+    max-width: 60px;
+    min-height: 40px;
+}
+.pop-up-icon i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    cursor: pointer;
+}
+@media (max-width:1024px)
+{
+    .hero-cont .hero-heading h1
+    {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .hero-contxt p
+    {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top:7px;
+        padding-bottom: 30px;
+    }
+    .hero-cont-card
+    {
+        max-width: 533px;
+    }
+}
+/* HERO_BANNER ENDS */
